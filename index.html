@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>3025 · Испытание безмолвием — Официальный сайт и Артбук (16+)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg-dark: #020617;
+            --bg-card: rgba(15, 23, 42, 0.92);
+            --accent: #38bdf8;
+            --accent-pink: #ec4899;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: radial-gradient(circle at top, #0f172a, #020617 70%);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+        a { color: var(--accent); text-decoration: none; }
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: rgba(2, 6, 23, 0.9);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0.9rem 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .logo {
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .age-badge {
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            border: 1px solid #ef4444;
+            color: #f87171;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        .nav-links { display: flex; gap: 1.2rem; font-size: 0.9rem; }
+        .nav-links a { color: var(--text-muted); transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .container { max-width: 1180px; margin: 0 auto; padding: 2rem 1.2rem 4rem; }
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            align-items: center;
+            margin-bottom: 3.5rem;
+        }
+        .hero h1 { font-size: 2.6rem; line-height: 1.15; margin-bottom: 1rem; }
+        .hero-tagline { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.4rem; }
+        .hero-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.6rem; }
+        .badge {
+            font-size: 0.78rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: var(--accent);
+        }
+        .btn-row { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.7rem 1.4rem;
+            border-radius: 999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), var(--accent-pink));
+            color: #020617;
+        }
+        .btn-ghost {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .section { margin-top: 3.5rem; }
+        .section-title { font-size: 1.7rem; margin-bottom: 0.4rem; }
+        .section-subtitle { color: var(--text-muted); margin-bottom: 1.8rem; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+        }
+        .card-title { font-size: 1.15rem; margin-bottom: 0.5rem; color: var(--accent); }
+        .card-text { font-size: 0.9rem; color: var(--text-muted); }
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-inner">
+            <div class="logo">
+                <span>3025 · Испытание безмолвием</span>
+                <span class="age-badge">16+</span>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="active">Главная</a>
+                <a href="world.html">Мир</a>
+                <a href="characters.html">Персонажи</a>
+                <a href="investors.html">Инвесторам</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div>
+                <h1>«Испытание безмолвием»</h1>
+                <p class="hero-tagline">Киберпанк-антиутопия о курьере Алисе, инопланетном телепате Ишимицу и побеге из Лаборатории Пандора, который меняет судьбу вертикального мегаполиса Нео-Терра.</p>
+                <div class="hero-badges">
+                    <span class="badge">Киберпанк 3025</span>
+                    <span class="badge">Симбиоз рас</span>
+                    <span class="badge">Манга & Артбук</span>
+                </div>
+                <div class="btn-row">
+                    <a href="https://yoomoney.ru/fundraise/1L7DIQUTSN7.261029" target="_blank" class="btn btn-primary">Поддержать проект (ЮMoney)</a>
+                    <a href="world.html" class="btn btn-ghost">Исследовать мир</a>
+                </div>
+            </div>
+            <div class="card" style="background: rgba(15, 23, 42, 0.8); border: 1px solid var(--border);">
+                <h3 class="card-title">Привет от Алисы</h3>
+                <p class="card-text" style="margin-top: 0.5rem;">«На уровне G-226 каждый вдох — испытание на прочность. Держи респиратор наготове и присоединяйся к нашему каналу сопротивления!»</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Архивы Нео-Терры</h2>
+            <p class="section-subtitle">Изучи устройство вертикальных уровней и досье ключевых героев.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3 class="card-title">Уровни H / G / F</h3>
+                    <p class="card-text">От сияющих куполов элиты H-900 и промышленных шахт G-226 до секретного бункера проекта «Пандора».</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Главные герои</h3>
+                    <p class="card-text">Курьер Алиса с янтарными глазами, кибер-медведь Фёдор и узник лаборатории F-730 Ишимицу.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Краудфандинг и цели</h3>
+                    <p class="card-text">Помоги нам выпустить первые две главы в идеальном качестве и запустить анимированный motion-тизер.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 3025–2026 «Испытание безмолвием» · Автор вселенной: Джозеф Милтофф. Все права защищены.</p>
+    </footer>
+</body>
+</html>
